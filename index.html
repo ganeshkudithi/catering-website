@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Catering Services</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background: #ff6b35;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #333;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1555244162-803834f70033') center/cover;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 30px;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 30px;
+      text-align: center;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .contact {
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    input, textarea {
+      width: 80%;
+      padding: 10px;
+      margin: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #ff6b35;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>Delicious Catering Services</h1>
+</header>
+
+<nav>
+  <a href="#menu">Menu</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero">
+  Fresh & Tasty Catering for Every Event
+</div>
+
+<div id="menu" class="section">
+  <h2>Our Menu</h2>
+
+  <div class="menu">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1604908176997-43174b8dfb9e">
+      <h3>Paneer Butter Masala</h3>
+      <p>Rich and creamy curry</p>
+      <p>₹250</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950">
+      <h3>Biryani</h3>
+      <p>Flavorful rice dish</p>
+      <p>₹300</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38">
+      <h3>Desserts</h3>
+      <p>Sweet treats</p>
+      <p>₹150</p>
+    </div>
+
+  </div>
+</div>
+
+<div id="about" class="section">
+  <h2>About Us</h2>
+  <p>We provide catering services for weddings, corporate events, and parties with high-quality food and service.</p>
+</div>
+
+<div id="contact" class="contact section">
+  <h2>Contact / Get Quote</h2>
+
+  <input type="text" placeholder="Your Name"><br>
+  <input type="text" placeholder="Event Date"><br>
+  <input type="text" placeholder="Number of Guests"><br>
+  <textarea placeholder="Message"></textarea><br>
+
+  <button onclick="submitForm()">Submit</button>
+</div>
+
+<script>
+  function submitForm() {
+    alert("Thank you! We will contact you soon.");
+  }
+</script>
+
+</body>
+</html>
